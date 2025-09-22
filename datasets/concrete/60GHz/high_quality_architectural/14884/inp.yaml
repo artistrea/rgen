@@ -1,0 +1,495 @@
+frequency: 60000000000.0
+bandwidth: 10000000.0
+tx_xy:
+- - 0.5724257682499894
+  - 3.538659290314216
+- - 2.2795655368892307
+  - -1.6942580324236327
+- - 5.22
+  - 1.8500000000000003
+- - 2.433817695497986
+  - 1.1828502734868067
+- - 5.424146144866308
+  - -1.2978689754850186
+- - -1.6133578871721168
+  - 3.0152928494430475
+- - -1.2050000000000003
+  - -0.715
+- - -4.567497116493656
+  - -0.4867993079584776
+wall_height: 3.0
+objects:
+- material: concrete
+  face_width: 0.4
+  type: ceiling
+- material: concrete
+  face_width: 0.4
+  type: floor
+- material: concrete
+  face_width: 0.18
+  type: wall
+  corners_2d:
+  - - -3.85
+    - -3.1950000000000003
+  - - 7.42
+    - -3.1950000000000003
+  - - 7.11
+    - -2.835
+  - - -3.58
+    - -2.835
+- material: concrete
+  face_width: 0.155
+  type: wall
+  corners_2d:
+  - - 7.42
+    - -3.1950000000000003
+  - - 7.42
+    - 3.515
+  - - 7.11
+    - 3.205
+  - - 7.11
+    - -2.835
+- material: concrete
+  face_width: 0.155
+  type: wall
+  corners_2d:
+  - - 7.42
+    - 3.515
+  - - 1.33
+    - 3.515
+  - - 1.09
+    - 3.205
+  - - 7.11
+    - 3.205
+- material: concrete
+  face_width: 0.12
+  type: wall
+  corners_2d:
+  - - 1.33
+    - 3.515
+  - - 1.33
+    - 5.015
+  - - 1.09
+    - 4.745
+  - - 1.09
+    - 3.205
+- material: concrete
+  face_width: 0.135
+  type: wall
+  corners_2d:
+  - - 1.33
+    - 5.015
+  - - -3.85
+    - 5.015
+  - - -3.58
+    - 4.745
+  - - 1.09
+    - 4.745
+- material: concrete
+  face_width: 0.135
+  type: wall
+  corners_2d:
+  - - -3.85
+    - 5.015
+  - - -3.85
+    - -3.1950000000000003
+  - - -3.58
+    - -2.835
+  - - -3.58
+    - 4.745
+- material: concrete
+  face_width: 0.095
+  type: wall
+  corners_2d:
+  - - 1.09
+    - 3.205
+  - - 1.09
+    - 2.395
+  - - 1.28
+    - 2.395
+  - - 1.28
+    - 3.205
+- material: concrete
+  face_width: 0.035
+  type: wall
+  corners_2d:
+  - - 1.09
+    - 2.465
+  - - 0.0
+    - 2.465
+  - - -0.07
+    - 2.395
+  - - 1.28
+    - 2.395
+- material: concrete
+  face_width: 0.035
+  type: wall
+  corners_2d:
+  - - 0.0
+    - 2.465
+  - - 0.0
+    - 5.015
+  - - -0.07
+    - 5.015
+  - - -0.07
+    - 2.395
+- material: concrete
+  face_width: 0.055
+  type: wall
+  corners_2d:
+  - - 1.28
+    - 2.395
+  - - 1.28
+    - -3.1950000000000003
+  - - 1.17
+    - -3.1950000000000003
+  - - 1.17
+    - 2.395
+- material: concrete
+  face_width: 0.045
+  type: wall
+  corners_2d:
+  - - 1.28
+    - 1.495
+  - - -3.85
+    - 1.495
+  - - -3.85
+    - 1.405
+  - - 1.28
+    - 1.405
+- material: concrete
+  face_width: 0.045
+  type: wall
+  corners_2d:
+  - - 7.42
+    - 0.495
+  - - 3.33
+    - 0.495
+  - - 3.33
+    - 0.405
+  - - 7.42
+    - 0.405
+- material: concrete
+  face_width: 0.045
+  type: wall
+  corners_2d:
+  - - 3.33
+    - 1.855
+  - - 3.33
+    - 3.515
+  - - 3.24
+    - 3.515
+  - - 3.24
+    - 1.855
+- material: concrete
+  face_width: 0.045
+  type: wall
+  corners_2d:
+  - - 4.32
+    - 0.495
+  - - 4.32
+    - -0.615
+  - - 4.23
+    - -0.525
+  - - 4.23
+    - 0.495
+- material: concrete
+  face_width: 0.045
+  type: wall
+  corners_2d:
+  - - 4.32
+    - -0.615
+  - - 1.17
+    - -0.615
+  - - 1.17
+    - -0.525
+  - - 4.23
+    - -0.525
+- material: concrete
+  face_width: 0.045
+  type: wall
+  corners_2d:
+  - - 3.5300000000000002
+    - -0.525
+  - - 3.5300000000000002
+    - -3.1950000000000003
+  - - 3.44
+    - -3.1950000000000003
+  - - 3.44
+    - -0.525
+- material: concrete
+  face_width: 0.0225
+  type: wall
+  corners_2d:
+  - - 3.5300000000000002
+    - -1.345
+  - - 3.19
+    - -1.345
+  - - 3.45
+    - -1.435
+  - - 3.5300000000000002
+    - -1.435
+- material: concrete
+  face_width: 0.13
+  type: wall
+  corners_2d:
+  - - 3.19
+    - -1.345
+  - - 3.19
+    - -3.1950000000000003
+  - - 3.45
+    - -3.1950000000000003
+  - - 3.45
+    - -1.435
+- material: concrete
+  face_width: 0.08
+  type: wall
+  corners_2d:
+  - - -3.58
+    - -2.205
+  - - -5.36
+    - -2.205
+  - - -5.36
+    - -2.045
+  - - -3.58
+    - -2.045
+- material: concrete
+  face_width: 0.06
+  type: wall
+  corners_2d:
+  - - -5.36
+    - 1.175
+  - - -3.58
+    - 1.175
+  - - -3.58
+    - 1.055
+  - - -5.36
+    - 1.055
+- material: concrete
+  face_width: 0.0225
+  type: wall
+  corners_2d:
+  - - -0.07
+    - 4.255
+  - - 0.35000000000000003
+    - 4.255
+  - - -0.02
+    - 4.345
+  - - -0.07
+    - 4.345
+- material: concrete
+  face_width: 0.185
+  type: wall
+  corners_2d:
+  - - 0.35000000000000003
+    - 4.255
+  - - 0.35000000000000003
+    - 5.015
+  - - -0.02
+    - 5.015
+  - - -0.02
+    - 4.345
+- material: concrete
+  face_width: 0.045
+  type: wall
+  corners_2d:
+  - - -5.36
+    - -2.205
+  - - -5.36
+    - 1.175
+  - - -5.2700000000000005
+    - 1.175
+  - - -5.2700000000000005
+    - -2.205
+- material: concrete
+  face_width: 0.155
+  type: wall_opening
+  corners_2d:
+  - - 2.2
+    - 3.515
+  - - 1.36
+    - 3.515
+  - - 1.36
+    - 3.205
+  - - 2.2
+    - 3.205
+  z_range:
+  - 0.0
+  - 3.0
+  state: open
+- material: concrete
+  face_width: 0.135
+  type: wall_opening
+  corners_2d:
+  - - -3.85
+    - 0.625
+  - - -3.85
+    - -0.145
+  - - -3.58
+    - -0.145
+  - - -3.58
+    - 0.625
+  z_range:
+  - 0.0
+  - 3.0
+  state: open
+- material: concrete
+  face_width: 0.035
+  type: wall_opening
+  corners_2d:
+  - - 0.68
+    - 2.465
+  - - 0.05
+    - 2.465
+  - - 0.05
+    - 2.395
+  - - 0.68
+    - 2.395
+  z_range:
+  - 0.0
+  - 3.0
+  state: open
+- material: concrete
+  face_width: 0.055
+  type: wall_opening
+  corners_2d:
+  - - 1.28
+    - 2.355
+  - - 1.28
+    - 1.565
+  - - 1.17
+    - 1.565
+  - - 1.17
+    - 2.355
+  z_range:
+  - 0.0
+  - 3.0
+  state: open
+- material: concrete
+  face_width: 0.055
+  type: wall_opening
+  corners_2d:
+  - - 1.28
+    - 1.385
+  - - 1.28
+    - 0.225
+  - - 1.17
+    - 0.225
+  - - 1.17
+    - 1.385
+  z_range:
+  - 0.0
+  - 3.0
+  state: open
+- material: concrete
+  face_width: 0.045
+  type: wall_opening
+  corners_2d:
+  - - 4.18
+    - 0.495
+  - - 3.41
+    - 0.495
+  - - 3.41
+    - 0.405
+  - - 4.18
+    - 0.405
+  z_range:
+  - 0.0
+  - 3.0
+  state: open
+- material: concrete
+  face_width: 0.045
+  type: wall_opening
+  corners_2d:
+  - - 4.32
+    - 0.295
+  - - 4.32
+    - -0.455
+  - - 4.23
+    - -0.455
+  - - 4.23
+    - 0.295
+  z_range:
+  - 0.0
+  - 3.0
+  state: open
+- material: concrete
+  face_width: 0.045
+  type: wall_opening
+  corners_2d:
+  - - 2.58
+    - -0.615
+  - - 1.8900000000000001
+    - -0.615
+  - - 1.8900000000000001
+    - -0.525
+  - - 2.58
+    - -0.525
+  z_range:
+  - 0.0
+  - 3.0
+  state: open
+- material: glass
+  face_width: 0.155
+  type: wall_opening
+  corners_2d:
+  - - 7.42
+    - -1.945
+  - - 7.42
+    - -0.495
+  - - 7.11
+    - -0.495
+  - - 7.11
+    - -1.945
+  z_range:
+  - 1.0
+  - 2.1
+  state: closed
+- material: glass
+  face_width: 0.155
+  type: wall_opening
+  corners_2d:
+  - - 7.42
+    - 1.105
+  - - 7.42
+    - 2.575
+  - - 7.11
+    - 2.575
+  - - 7.11
+    - 1.105
+  z_range:
+  - 1.0
+  - 2.1
+  state: closed
+- material: glass
+  face_width: 0.135
+  type: wall_opening
+  corners_2d:
+  - - -3.85
+    - -0.17500000000000002
+  - - -3.85
+    - -1.965
+  - - -3.58
+    - -1.965
+  - - -3.58
+    - -0.17500000000000002
+  z_range:
+  - 1.0
+  - 2.1
+  state: closed
+- material: glass
+  face_width: 0.135
+  type: wall_opening
+  corners_2d:
+  - - -3.85
+    - 3.825
+  - - -3.85
+    - 2.075
+  - - -3.58
+    - 2.075
+  - - -3.58
+    - 3.825
+  z_range:
+  - 1.0
+  - 2.1
+  state: closed

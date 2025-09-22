@@ -1,0 +1,42 @@
+frequency: 3500000000.0
+bandwidth: 10000000.0
+tx_xy:
+- - 0.0
+  - 0.0
+wall_height: 3.0
+objects:
+- material: concrete
+  face_width: 0.4
+  type: ceiling
+- material: concrete
+  face_width: 0.4
+  type: floor
+- material: concrete
+  face_width: 0.2
+  type: wall
+  corners_2d:
+  - - -1.0
+    - -10.0
+  - - -1.0
+    - 10.0
+  - - 1.0
+    - 10.0
+  - - 1.0
+    - -10.0
+- material: glass
+  face_width: 0.2
+  type: wall_opening
+  corners_2d:
+  - - -1.0
+    - -2.0
+  - - -1.0
+    - 2.0
+  - - 1.0
+    - 2.0
+  - - 1.0
+    - -2.0
+  z_range:
+  - 1.0
+  - 2.1
+  state: open
+

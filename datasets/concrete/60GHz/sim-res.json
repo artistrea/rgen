@@ -1,0 +1,1 @@
+{"errors": [{"at": "high_quality_architectural/1191/", "err": "'MultiPolygon' object has no attribute 'exterior'"}], "successes": [], "non_existent": []}

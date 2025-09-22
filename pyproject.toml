@@ -1,0 +1,11 @@
+[project]
+name = "rmgen-suite"
+version = "0.1"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rmgen_ds", "CubiCasa5k"]

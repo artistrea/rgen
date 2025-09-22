@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="utf-8">
+  <title>Wall Graph Editor</title>
+  <style>
+    canvas { border: 1px solid black; display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+
+<form>
+  <label for="small-file-input" class="sr-only">Choose floorplan image</label>
+  <input type="file" accept="image/*" name="small-file-input" id="fileInput" class="block w-full border border-gray-200 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none
+    file:bg-gray-50 file:border-0
+    file:me-4
+    file:py-2 file:px-4">
+</form>
+
+<canvas id="editor" width="600" height="600"></canvas>
+<button onclick="download()">Download JSON</button>
+
+<script>
+const canvas = document.getElementById("editor");
+const ctx = canvas.getContext("2d");
+const nodes = [];
+const edges = [];
+let selectedNode = null;
+let img = new Image();
+const MX_HEIGHT = 700;
+const MX_WIDTH = 1400;
+function redraw() {
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  
+  <!-- console.log(img.width, img.height); // original dimensions -->
+  let aspect_ratio = img.width / img.height
+  let w = min(img.width, MX_WIDTH);
+  if (aspect_ratio * w > MX_HEIGHT) {
+    h = MX_HEIGHT;
+    w = h / aspect_ratio;
+  } else {
+    h = aspect_ratio * w;
+  }
+  canvas.width = w;
+  canvas.height = h;
+  ctx.drawImage(img, 0, 0);
+
+  if (img.complete && img.src) {
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  }
+  // edges
+  ctx.strokeStyle = "red";
+  ctx.lineWidth = 2;
+  edges.forEach(e => {
+    const a = nodes[e.source], b = nodes[e.target];
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(b.x, b.y);
+    ctx.stroke();
+  });
+  // nodes
+  ctx.fillStyle = "blue";
+  nodes.forEach(n => {
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, 5, 0, Math.PI*2);
+    ctx.fill();
+  });
+}
+
+// add node / connect
+canvas.addEventListener("click", (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left, y = e.clientY - rect.top;
+
+  const hit = nodes.find(n => Math.hypot(n.x - x, n.y - y) < 10);
+
+  if (hit) {
+    if (selectedNode && selectedNode !== hit) {
+      edges.push({source: selectedNode.id, target: hit.id});
+      selectedNode = null;
+    } else {
+      selectedNode = hit;
+    }
+  } else {
+    const id = nodes.length;
+    nodes.push({id, x, y});
+    selectedNode = null;
+  }
+  redraw();
+});
+
+// load image from file input
+document.getElementById("fileInput").addEventListener("change", (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (ev) => {
+    img = new Image();
+    img.onload = () => redraw();
+    img.src = ev.target.result;
+  };
+  reader.readAsDataURL(file);
+});
+
+// export
+function download() {
+  const data = JSON.stringify({nodes, edges}, null, 2);
+  const blob = new Blob([data], {type: "application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "graph.json";
+  a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>
+DocStruct_old/pull/24/files
