@@ -95,8 +95,6 @@ requests==2.32.5
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
 rfc3987-syntax==1.1.0
--e git+ssh://git@github.com/artistrea/rgen.git@4cce196fcc1a7b254da5ef67b883a2b320f3b6d7#egg=rmgen_ds
--e git+ssh://git@github.com/artistrea/rgen.git@4cce196fcc1a7b254da5ef67b883a2b320f3b6d7#egg=rmgen_suite
 rpds-py==0.27.1
 scikit-image==0.25.2
 scipy==1.16.2
